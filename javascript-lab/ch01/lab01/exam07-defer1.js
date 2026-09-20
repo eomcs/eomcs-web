@@ -1,0 +1,1 @@
+console.log("4. 첫 번째 defer 스크립트");

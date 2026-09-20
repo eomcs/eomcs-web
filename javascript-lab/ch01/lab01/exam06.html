@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>DOMContentLoaded 이벤트의 활용</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log(document.querySelector("#message"));
+      document.querySelector("#message").textContent = "스크립트 실행 완료";
+    });
+  </script>
+</head>
+<body>
+  <h1 id="message">스크립트 실행 전</h1>
+</body>
+</html>

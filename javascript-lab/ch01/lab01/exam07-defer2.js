@@ -1,0 +1,1 @@
+console.log("5. 두 번째 defer 스크립트");

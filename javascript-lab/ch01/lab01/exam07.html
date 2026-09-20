@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>스크립트 실행 순서</title>
+  <script>
+    console.log("1. head 인라인 스크립트");
+
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("6. DOMContentLoaded 리스너");
+    });
+
+    window.addEventListener("load", function() {
+      console.log("7. load 리스너");
+    });
+  </script>
+
+  <script src="exam07-defer1.js" defer></script>
+  <script src="exam07-normal.js"></script>
+  <script src="exam07-defer2.js" defer></script>
+</head>
+<body>
+  <h1>스크립트 실행 순서</h1>
+  <p>개발자 도구의 Console 탭에서 출력 순서를 확인하세요.</p>
+
+  <script>
+    console.log("3. body 인라인 스크립트");
+  </script>
+</body>
+</html>
